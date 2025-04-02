@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import bitmap from './assets/bitmap.webp'
+import github from './assets/githubv2.webp'
 import './App.css'
 
 function App() {
@@ -115,7 +116,9 @@ function App() {
       <div className="bottom">
 
 
-        <div className="contactApps"></div>
+        <div className="contactApps">
+          <img src={github} alt="Github" className="GitHub" />
+        </div>
       </div>
 
     </div>
