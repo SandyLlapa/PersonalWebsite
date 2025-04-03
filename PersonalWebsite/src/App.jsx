@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import bitmap from './assets/bitmap.webp'
 import github from './assets/githubv2.webp'
+import email from './assets/email.webp'
+import linkedin from './assets/linkedin.webp'
+
 import './App.css'
 
 function App() {
@@ -117,7 +120,18 @@ function App() {
 
 
         <div className="contactApps">
-          <img src={github} alt="Github" className="GitHub" />
+          <button className="tooltip-container" onClick={()=>window.location.href="https://github.com/SandyLlapa"}>
+            <img src={github} alt="Github" className="GitHub" />
+            <span className="tooltip">GitHub</span>
+          </button>
+          <button className="tooltip-container" onClick={()=>window.location.href="https://www.linkedin.com/in/sandyllapa/"}>
+            <img src={linkedin} alt="Linkedin" className="Linkedin" />
+            <span className="tooltip">Linkedin</span>
+          </button>
+          <button className="tooltip-container" onClick={() => window.location.href = "mailto:sandyllapa@gmail.com"}>
+            <img src={email} alt="Email" className="Email" />
+            <span className="tooltip">Email</span>
+          </button>
         </div>
       </div>
 
