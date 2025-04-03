@@ -3,7 +3,13 @@ import bitmap from './assets/bitmap.webp'
 import github from './assets/githubv2.webp'
 import email from './assets/email.webp'
 import linkedin from './assets/linkedin.webp'
-
+import CertificationWindow from './components/windows/CertificationsWindow.jsx';
+import AboutMeWindow from './components/windows/AboutMeWindow.jsx';
+import EducationsWindow from './components/windows/EducationsWindow.jsx';
+import ResumeWindow from './components/windows/ResumeWindow.jsx';
+import SkillsWindow from './components/windows/SkillsWindow.jsx';
+import ProjectsWindow from './components/windows/ProjectsWindow.jsx';
+import ExperienceWindow from './components/windows/ExperienceWindow.jsx';
 import './App.css'
 
 function App() {
@@ -12,23 +18,58 @@ function App() {
   const [highestZIndex, setHighestZIndex] = useState(1);
 
   const folders = [
-    { id: 1, name: 'Projects', content: 'Projects content here' },
-    { id: 2, name: 'Experience', content: 'Experience go here' },
-    { id: 3, name: 'Skills', content: 'Skills go here' },
-    { id: 4, name: 'Certifications', content: 'Certs go here' },
-    { id: 5, name: 'Education', content: 'Education go here' },
-    { id: 6, name: 'Resume', content:'Resume go here'},
-    { id: 7, name: 'AboutMe', content:'About me go here'}
+    { id: 1, name: 'Projects', content: <ProjectsWindow /> },
+    { id: 2, name: 'Experience', content: <ExperienceWindow /> },
+    { id: 3, name: 'Skills', content: <SkillsWindow />},
+    { id: 4, name: 'Certifications', content: <CertificationWindow />},
+    { id: 5, name: 'Education', content: <EducationsWindow />},
+    { id: 6, name: 'Resume', content: <ResumeWindow />},
+    { id: 7, name: 'AboutMe', content: <AboutMeWindow />}
   ];
 
   const openFolder=(folder)=>{
+
+    let windowContent;
+
+    switch(folder.id){
+
+      case 1:
+        windowContent = < ProjectsWindow/>;
+        break;
+
+      case 2:
+        windowContent =  <ExperienceWindow />;
+        break;
+      
+      case 3:
+        windowContent = <SkillsWindow />;
+        break;
+
+      case 4: 
+        windowContent = <CertificationWindow />;
+        break;
+
+      case 5: 
+        windowContent = <EducationsWindow />;
+        break;
+      
+      case 6:
+        windowContent = <ResumeWindow />;
+        break;
+
+      case 7:
+        windowContent = <AboutMeWindow />;
+        break;
+
+    }
+
     setWindows(prev=>[
       ...prev,
       {
         id: Date.now(),
         folderId: folder.id,
         title: folder.name,
-        content: folder.content,
+        content: windowContent,
         position: {
           x: 400+(Math.random()*200),
           y: Math.random()*200

@@ -1,0 +1,17 @@
+.cert-card{
+  color:black;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding:5px 10px 20px 25px;
+
+
+}
+.cert-grid {
+  display: grid;
+  gap: 25px; /* This adds space between grid items */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.cloudImg{
+  height:100px;
+}
