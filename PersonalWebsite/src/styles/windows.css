@@ -1,8 +1,17 @@
+
+
 .cert-card{
-  color:black;
+  color:rgb(255, 255, 255);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   border-radius: 15px;
-  padding:5px 10px 20px 25px;
+  padding: 20px;
+  /* border:3px solid black; */
+  display:flex;
+  min-height: 10.5vw;
+  /* max-height: 40vw; */
+  background-color: #353535;
+  transition: all 0.3s ease;
+  
 
 
 }
@@ -10,8 +19,50 @@
   display: grid;
   gap: 25px; /* This adds space between grid items */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: stretch;
+  margin-bottom: 60px;
+  padding-right: 15px;
+  /* border:3px solid rgb(255, 0, 0) */
 }
 
-.cloudImg{
-  height:100px;
+
+
+.cert-image{
+  height: 11vw;
+  object-fit: contain;
+}
+
+/* .cert-grid{
+  border:3px solid rgb(0, 255, 170);
+} */
+
+.certLink{
+  margin: 0px;
+  padding:0px;
+  border:none;
+  max-height:200px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+
+.certTitle{
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-bottom:0px;
+}
+
+.cert-date{
+
+  font-size:15px;
+}
+
+.certDescription{
+  margin-left: 20px;
+
+}
+
+.cert-description {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  overflow-wrap: break-word; /* Prevent text overflow */
 }
