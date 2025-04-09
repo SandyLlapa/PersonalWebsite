@@ -66,9 +66,9 @@
 
 
 
-/* Education University */
+/* Education */
 
-.universityIcon{
+.universityIcon, .achieveIcon{
   height:100px;
 
 }
@@ -83,8 +83,7 @@
 
 }
 
-.uniImg{
-  /* border:2px solid rgb(0, 34, 128); */
+.uniImg, .achieveImg{
   display:block;
   align-content: center;
   padding-left: 20px;
@@ -92,7 +91,7 @@
   padding-top: 20px;
 }
 
-.uniTitle{
+.uniTitle, .achieveContent{
   /* border:2px solid rgb(0, 195, 255); */
   margin:10px;
   padding: 0px;
@@ -111,12 +110,12 @@
 
 .uniDate{
   background-color: #353535;
-  width: 30%;
+  width: 40%;
   border-radius: 15px;
   display: block;
   justify-items: center;
   margin-top: 20px;
-  padding: 5px 5px 25px 5px;
+  padding: 5px 5px 10px 5px;
 
 }
 
@@ -126,27 +125,103 @@
 
 }
 
-.uniDate> .month{
+
+.calendar> .month{
   text-align: center;
   background-color: #FA2D48;
-  width:50%;
-  height: 2vw;
+  width:5.5vw;
+  height: 2.5vw;
+  
   border-radius: 10px 10px 0px 0px;
 }
 
-.uniDate> .year{
+.calendar> .year{
   text-align: center;
   color:black;
   background-color: #ffffff;
-  width:50%;
-  height: 3vw;
+  width:5.5vw;
+  height: 3.5vw;
   border-radius: 0px 0px 10px 10px;
 }
 
-.uniDate>.month> h3 {
+.calendar>.month> h3 {
   margin-bottom: 0px;
+  padding-top: 10px;
+  font-size: 22px;
 }
 
-.uniDate>.year> h3 {
+.calendar>.year> h3 {
   margin-top: 0px;
+  padding-top:16px;
+  font-size: 22px;
 }
+
+
+.secondRowEdu{
+  display: flex;
+}
+
+.achievements{
+  border-radius: 15px;
+  background-color: #353535;
+  display:flex;
+  
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-right: 10px;
+
+  
+
+}
+.achieveContent{
+  padding: 0px;
+  margin:0px;
+}
+
+.achieveContent>h3{
+  margin-top: 5px;
+  padding-right:20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+
+.secondRowEdu{
+  gap:20px;
+  
+}
+
+.achieveImg{
+  display:block;
+  align-content: center;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 0px;
+  margin: 0px;
+}
+
+.achieveContent li {
+  font-size: 15px;
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+.achieveContent li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+.achieveContent ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.uniClasses{
+  border-radius: 15px;
+  background-color: #353535;
+  display:flex;
+  padding-bottom: 10px;
+
+}
+
