@@ -220,8 +220,70 @@
 .uniClasses{
   border-radius: 15px;
   background-color: #353535;
-  display:flex;
-  padding-bottom: 10px;
+  display:block;
+  padding: 10px;
+  margin-bottom: 60px;
+  margin-top: 25px;
 
+}
+
+.titleClasses>h3{
+  text-align: center;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.course-image {
+
+  height: 80px;
+  width: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.course-image:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.class-label {
+  text-align: center;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Skills Window */
+
+.lang-image{
+  height:6vw;
+}
+
+.lang-card{
+  width:6vw;
+  padding-bottom: 15px;
 }
 

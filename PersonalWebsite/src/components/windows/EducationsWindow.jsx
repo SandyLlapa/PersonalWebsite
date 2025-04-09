@@ -2,16 +2,7 @@ import React from 'react';
 import '/src/styles/windows.css';
 import uniIcon from '/src/assets/universityIcon.webp';
 import achieveIcon from '/src/assets/achieve.webp';
-import advancedProgramming from '/src/assets/advanceProgram.webp';
-import algData from '/src/assets/algData.webp';
-import artificial from '/src/assets/artificial.webp';
-import discrete from '/src/assets/discrete.webp';
-import game from '/src/assets/game.webp';
-import internet from '/src/assets/internet.webp';
-import machine from '/src/assets/machine.webp';
-import operating from '/src/assets/operating.webp';
-import programDesign from '/src/assets/programDesign.webp';
-import secure from '/src/assets/secure.webp';
+
 
 
 
@@ -21,52 +12,52 @@ const EducationsWindow=()=>{
     {
       id:1,
       title:"Advanced Programming Principles",
-      image: {advancedProgramming}
+      image: '/src/assets/advanceProgram.webp'
     },
     {
       id:2,
       title: "Algorithms & Data Structures",
-      image:{algData}
+      image:'/src/assets/algData.webp'
     },
     {
       id:3,
       title:"Artificial Intelligence",
-      image:{artificial}
+      image:'/src/assets/artificial.webp'
     },
     {
       id:4,
       title:"Discrete Structures",
-      image:{discrete}
+      image:'/src/assets/discrete.webp'
     },
     {
       id:5,
       title:"Programming Graphics & Games",
-      image:{game}
+      image:'/src/assets/game.webp'
     },
     {
       id:6,
       title:"Internet Programming",
-      image:{internet}
+      image:'/src/assets/internet.webp'
     },
     {
       id:7,
       title:"Machine Architecture & Organization",
-      image:{machine}
+      image:'/src/assets/machine.webp'
     },
     {
       id:8,
       title:"Operating Systems",
-      image:{operating}
+      image:'/src/assets/operating.webp'
     },
     {
       id:9,
       title:"Programming Design & Development",
-      image:{programDesign}
+      image:'/src/assets/programDesign.webp'
     },
     {
       id:10,
       title:"Develop Secure Software Systems",
-      image:{secure}
+      image:'/src/assets/secure.webp'
     }
   ]
 
@@ -124,15 +115,17 @@ const EducationsWindow=()=>{
       
 
       <div className="uniClasses">
-        <h3 className="titleClasees"> Relevant Courswork</h3>
-        {classes.map(course=>(
-          <div key={course.id} className="class-app">
-            <img src={course.image} className="course-image"></img>
-
-
-
-          </div>
-        ))}
+        <div className="titleClasses">
+          <h3> Relevant Courswork</h3>
+        </div>
+        <div className="courses-grid">
+          {classes.map(course=>(
+            <div key={course.id} className="course-card">
+              <img src={course.image} className="course-image" alt={course.title}></img>
+              <p className="class-label">{course.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
 
