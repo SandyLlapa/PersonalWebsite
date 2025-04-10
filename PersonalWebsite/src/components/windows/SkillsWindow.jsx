@@ -73,47 +73,52 @@ const SkillsWindow=()=>{
     <div className="skillContainer">
 
       <div className="languages">
-
+        <div className="lang-header">
+          <h3>Technical Language</h3>
+          <h3>Proficiency</h3>
+        </div>
         <div className="langs-grid">
           {langs.map(lang =>(
             <div key={lang.id} className="lang-card">
-              <img src={lang.image} className="lang-image" alt={lang.title}></img>
-              <p className="class-label">{lang.title}</p>
+              
+              
+              
 
-              <Box sx={{ mt: 1 }}>
-                <Rating 
-                  className="custom-rating" 
-                  name={`rating-${lang.id}`} 
-                  value={lang.rating}  
-                  onChange={(event, newValue) =>handleRatingChange(lang.id, newValue)} 
-                  sx={{'& .MuiRating-icon': {
-                  stroke: '#ffff',        // Outline color
-                  strokeWidth: 1.1       // Outline thickness
-                  }}} 
-                readOnly/>
-              </Box>
+
+              <div className="lang-left">
+                
+                <img src={lang.image} className="lang-image" alt={lang.title}></img>
+                <p className="class-label">{lang.title}</p>
+              </div>
+
+              <div className="lang-right">
+                
+
+                <Box sx={{ mt: 1 }} className="proficiency">
+                  <Rating 
+                    className="custom-rating"
+                    size="large"
+                    name={`rating-${lang.id}`} 
+                    value={lang.rating}  
+                    onChange={(event, newValue) =>handleRatingChange(lang.id, newValue)} 
+                    sx={{'& .MuiRating-icon': {
+                      // color: 'transparent',
+                      stroke: '#ffff',        // Outline color
+                      strokeWidth: 0.8       // Outline thickness
+                    }}} 
+                  readOnly/>
+                </Box>
+              </div>
+              
+
+              
             </div>
           ))}
 
         </div>
-
-
-
-        
       </div>
-
-      
     </div>
-
-
-
-
-
-    
   );
-
-
-
 }
 
 
