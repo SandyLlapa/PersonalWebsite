@@ -539,3 +539,156 @@
 .link-btn:hover {
   background-color: #005bb5;
 }
+
+
+
+/* Experience Window */
+
+/* Container */
+.experience-container {
+  display: flex;
+  height: 93%;
+  background: #333;
+  border-radius: 16px;
+  overflow: hidden;
+  border:none;
+}
+
+/* Sidebar */
+.sidebar {
+  /* border:solid red 2px; */
+  width: 20%;
+  background: #333;
+  padding: 0px;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border:none;
+  /* border-right: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+/* Tab Button */
+.period-tab {
+  /* border:solid rgb(204, 0, 255) 2px; */
+  /* margin:0px; */
+  position: relative;
+  /* margin-left: 0px; */
+  text-align: left;
+  
+  padding: 12px 20px;
+  /* margin: 4px 10px; */
+  /* border: none; */
+  /* border-radius: 8px; */
+  width:100%;
+  color: #e6e6e6;
+  font-size: 0.9rem;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #333;
+  /* border:0px; */
+  border-radius: 0px;
+  z-index: 1;
+}
+
+/* Bubble Elements */
+.bubble-indicator {
+  /* border:solid rgb(0, 242, 255) 2px; */
+  position: absolute;
+  left: 85%;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #002aff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px #0099ff;
+  z-index: 1;
+}
+
+.bubble-curve {
+  /* border:2px solid blue; */
+  position: absolute;
+  left:85%;
+  right:0;
+  top: 0;
+  width:100%;
+  height: 90%;
+  /* background: rgba(255, 215, 0, 0.1); */
+  border-radius: 45px 45px 45px 45px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+}
+
+.period-tab.active .bubble-curve {
+  transform: scaleX(1.1);
+}
+
+.period-tab.active {
+  color: #ffffff;
+  font-weight: 500;
+  border:0px;
+}
+
+/* Content Area */
+.content {
+  background-color: #ffffff;
+  flex: 1;
+  padding: 30px;
+  color: #333;
+}
+
+.content h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.content h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.highlights {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.highlights li {
+  margin-bottom: 10px;
+  position: relative;
+  list-style-type: none;
+}
+
+.highlights li::before {
+  content: "•";
+  color: #333;
+  position: absolute;
+  left: -20px;
+}
+
+
+/* About Me Window */
+
+.profileContainer{
+  background-color: #a1d3ffa7;
+  border-radius: 15px;
+}
+
+.character{
+  height:11.5vw;
+  border-radius: 120px;
+}
+
+.chat-bubble{
+  width:17vw;
+}
+
+.hobbies-img{
+  height:13vw;
+}
+
