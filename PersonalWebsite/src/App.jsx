@@ -13,9 +13,19 @@ import ExperienceWindow from './components/windows/ExperienceWindow.jsx';
 import './App.css'
 
 function App() {
-  const [windows, setWindows] = useState([]);
+  const [windows, setWindows] = useState([{
+    id: Date.now(),
+    folderId: 7, // AboutMe's ID
+    title: 'AboutMe',
+    content: <AboutMeWindow />,
+    position: {
+      x: 400 + (Math.random() * 200),
+      y: Math.random() * 200
+    },
+    zIndex: 1
+  }]);
   const [activeWindow, setActiveWindow] = useState(null);
-  const [highestZIndex, setHighestZIndex] = useState(1);
+  const [highestZIndex, setHighestZIndex] = useState(2);
 
   const folders = [
     { id: 1, name: 'Projects', content: <ProjectsWindow /> },
