@@ -81,10 +81,18 @@ html,body, #root, .container{
 .close {
   background: none;
   border: none;
-  font-size: 1.2rem;
   cursor: pointer;
+  /* border:solid #ff7b00 2px; */
+  padding:0px;
+  margin-right: 1vw;
+  /* margin:0px; */
   
-  
+}
+
+.exit-btn{
+  /* border:solid blue 2px; */
+  padding:0px;
+  height:30px;
 }
 
 .contactApps{

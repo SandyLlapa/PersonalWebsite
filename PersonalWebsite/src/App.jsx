@@ -3,6 +3,7 @@ import bitmap from './assets/bitmap.webp'
 import github from './assets/githubv2.webp'
 import email from './assets/email.webp'
 import linkedin from './assets/linkedin.webp'
+import exit from './assets/exit.png'
 import CertificationWindow from './components/windows/CertificationsWindow.jsx';
 import AboutMeWindow from './components/windows/AboutMeWindow.jsx';
 import EducationsWindow from './components/windows/EducationsWindow.jsx';
@@ -160,7 +161,9 @@ function App() {
         >
           <div className="windowHeader" onMouseDown={(e) => handleMouseDown(e, window.id)}>
             <h3>{window.title}</h3>
-            <button className="close" onClick={() => closeWindow(window.id)}>X</button>
+            <button className="close" onClick={() => closeWindow(window.id)}>
+              <img className="exit-btn" src={exit}></img>
+            </button>
           </div>
 
           <div className="windowContent">{window.content}</div>
