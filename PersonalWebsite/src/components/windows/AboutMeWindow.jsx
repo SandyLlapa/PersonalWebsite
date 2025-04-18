@@ -84,6 +84,17 @@ const AboutMeWindow=()=>{
 
       </div>
 
+
+      <div className="thanks-section">
+        <h2>Thank you!</h2>
+        <p>Thank you so much for taking the time to explore my portfolio. I truly appreciate your interest in my work and the effort you’ve taken to learn more about my skills and experiences.
+            Each project I’ve included represents a piece of my journey, and I’m grateful for the opportunity to share it with you. If you’d like to connect, discuss collaborations, or simply chat about my work, I’d love to hear from you!
+            Thanks again for stopping by—it means a lot.
+
+        </p>
+
+      </div>
+
     </div>
   )
 }
