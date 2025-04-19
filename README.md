@@ -16,3 +16,5 @@ Frontend: HTML, CSS, JavaScript
 Frameworks/Libraries: React
 
 Tools: Vite, Figma, Procreate, Inkscape
+
+*All art designs was created by me*
