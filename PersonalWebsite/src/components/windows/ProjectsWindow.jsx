@@ -8,8 +8,8 @@ const ProjectsWindow = () => {
   const projects = [
     {
       id: 1,
-      title: "Drone Simulation",
-      description:`Developed a smart drone delivery simulation with a team, showcasing real-time route visualization, dynamic rerouting for low battery, and support for pathfinding algorithms like A*, Dijkstra, BFS, and DFS. Focused on building an intuitive interface and seamless user interaction. This project reflects my strengths in problem-solving, algorithm design, and creating engaging, interactive systems.`,
+      title: "Drone Delivery Simulation",
+      description:`As part of a collaborative team, I helped develop an intelligent drone delivery simulation that optimizes real-time route planning using multiple pathfinding algorithms (A*, Dijkstra, BFS, DFS). The system dynamically adjusts routes for obstacles or low battery scenarios while providing live notifications via the Observer pattern. The architecture was designed using UML diagrams (class, sequence) and implemented scalable patterns like Strategy for interchangeable algorithms. Prioritizing both performance and usability, the project features an intuitive UI for testing complex scenarios. This experience sharpened my skills in algorithm design, system architecture, and Agile teamwork—demonstrating my ability to deliver robust technical solutions under iterative development.`,
       image: "/src/assets/Drone.png",
       tech: ["HTML", "CSS", "JavaScript","C++", "Docker", "Agile Development","UML Design", "Design Patterns" ],
       codeLink: "https://github.com/SandyLlapa/droneSimulation",
@@ -128,12 +128,10 @@ const ProjectsWindow = () => {
           >
 
             <div className="project-scroll-content">
-            
               <div className="project-icon">
                 <img src={projects[currentIndex].image} alt={projects[currentIndex].title} />
               </div>
               
-
               <div className="project-header">
                 <h2>{projects[currentIndex].title}</h2>
               </div>
@@ -149,9 +147,12 @@ const ProjectsWindow = () => {
               </div>
 
               <div className="project-links">
-                <a href={projects[currentIndex].codeLink} target="_blank" rel="noopener noreferrer" className="link-btn">
-                  View Code
-                </a>
+                {projects[currentIndex].codeLink &&(
+                  <a href={projects[currentIndex].codeLink} target="_blank" rel="noopener noreferrer" className="link-btn">
+                    View Code
+                  </a>
+                )}
+                
                 {projects[currentIndex].liveLink && (
                   <a href={projects[currentIndex].liveLink} target="_blank" rel="noopener noreferrer" className="link-btn">
                     Live Demo
@@ -159,14 +160,11 @@ const ProjectsWindow = () => {
                 )}
               </div>
             </div>
-
           </Motion.div>
         </AnimatePresence>
       </div>
-
       <button className="arrow-right" onClick={nextCard}>›</button>
     </div>
   );
 };
-
 export default ProjectsWindow;

@@ -3,11 +3,7 @@ import '/src/styles/windows.css';
 import uniIcon from '/src/assets/universityIcon.webp';
 import achieveIcon from '/src/assets/achieve.webp';
 
-
-
-
 const EducationsWindow=()=>{
-
   const classes = [
     {
       id:1,
@@ -70,18 +66,14 @@ const EducationsWindow=()=>{
         </div>
         
         <div className="uniTitle">
-          
           <h3>University of Minnesota - Twin Cities</h3>
           <p>College of Science and Engineering</p>
           <p><i>B.S in Computer Science</i></p>
         </div>
-
       </div>
 
       <div className="secondRowEdu">
-
         <div className="uniDate">
-          
           <h3 className="titleDate">Graduated</h3>
 
           <div className="calendar">
@@ -105,15 +97,12 @@ const EducationsWindow=()=>{
               <li>Earned Full-tuition coverage through competitive scholarships</li>
               <li>Dean's List: Spring 2022 & 2023  </li>
               <li>Volunteer tutor in Spring 2024</li>
+              <li>Participated and volunteered in activities in Mi Gente Latinx Student Cultural Center</li>
             </ul>  
           </div>
         </div>
       </div>    
-
-        
-
       
-
       <div className="uniClasses">
         <div className="titleClasses">
           <h3> Relevant Courswork</h3>
@@ -127,12 +116,7 @@ const EducationsWindow=()=>{
           ))}
         </div>
       </div>
-
-
-
     </div>
-
   )
 }
-
 export default EducationsWindow

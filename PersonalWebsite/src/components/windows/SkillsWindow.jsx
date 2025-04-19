@@ -4,9 +4,6 @@ import Rating from '@mui/material/Rating';
 
 
 const SkillsWindow=()=>{
-
-  
-
   const [langs,setLangs]= useState([
     {
       id:1,
@@ -90,7 +87,6 @@ const SkillsWindow=()=>{
     )
   };
 
-
   return (
     <div className="skillContainer">
       <div className="languages">
@@ -114,9 +110,8 @@ const SkillsWindow=()=>{
                     value={lang.rating}  
                     onChange={(event, newValue) =>handleRatingChange(lang.id, newValue)} 
                     sx={{'& .MuiRating-icon': {
-                      // color: 'transparent',
-                      stroke: '#ffff',        // Outline color
-                      strokeWidth: 0.8       // Outline thickness
+                      stroke: '#ffff',       
+                      strokeWidth: 0.8      
                     }}} 
                   readOnly/>
                 </Box>
@@ -142,7 +137,4 @@ const SkillsWindow=()=>{
     </div>
   );
 }
-
-
-
 export default SkillsWindow

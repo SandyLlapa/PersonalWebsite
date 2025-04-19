@@ -39,39 +39,30 @@ function App() {
   ];
 
   const openFolder=(folder)=>{
-
     let windowContent;
 
     switch(folder.id){
-
       case 1:
         windowContent = < ProjectsWindow/>;
         break;
-
       case 2:
         windowContent =  <ExperienceWindow />;
         break;
-      
       case 3:
         windowContent = <SkillsWindow />;
         break;
-
       case 4: 
         windowContent = <CertificationWindow />;
         break;
-
       case 5: 
         windowContent = <EducationsWindow />;
         break;
-      
       case 6:
         windowContent = <ResumeWindow />;
         break;
-
       case 7:
         windowContent = <AboutMeWindow />;
         break;
-
     }
 
     setWindows(prev=>[
@@ -102,15 +93,12 @@ function App() {
         win.id === id ? {...win, zIndex: highestZIndex + 1} : win
       )
     );
-
     setHighestZIndex(highestZIndex + 1);
-
     setActiveWindow({id, offsetX: event.clientX, offsetY: event.clientY});
   };
 
   const handleMouseMove=(event)=>{
     if(!activeWindow) return;
-
     setWindows((prev)=>
       prev.map((win)=>
         win.id === activeWindow.id
@@ -132,7 +120,6 @@ function App() {
     }));
 
   };
-
 
   const handleMouseUp = () => {
     setActiveWindow(null);
@@ -165,14 +152,11 @@ function App() {
               <img className="exit-btn" src={exit}></img>
             </button>
           </div>
-
           <div className="windowContent">{window.content}</div>
         </div>
       ))}
 
       <div className="bottom">
-
-
         <div className="contactApps">
           <button className="tooltip-container" onClick={()=>window.location.href="https://github.com/SandyLlapa"}>
             <img src={github} alt="Github" className="GitHub" />
@@ -188,9 +172,7 @@ function App() {
           </button>
         </div>
       </div>
-
     </div>
   );
 };
-
 export default App

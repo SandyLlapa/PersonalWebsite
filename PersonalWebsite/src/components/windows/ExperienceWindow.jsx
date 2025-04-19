@@ -78,20 +78,9 @@ const ExperienceWindow = () => {
     <Motion.button
       className={`period-tab ${isActive ? 'active' : ''}`}
       onClick={onClick}
-      // whileHover={{ scale: 1.03 }}
-      // whileTap={{
-      //   scale: 0.97,
-      //   borderRadius: "0px 0px 0px 0px" // Bubble curve effect
-      // }}
-      // transition={{ 
-      //   type: "spring",
-      //   stiffness: 300,
-      //   damping: 15
-      // }}
     >
       {period}
       
-      {/* Yellow indicator dot */}
       {isActive && (
         <Motion.div 
           className="bubble-indicator"
@@ -105,14 +94,12 @@ const ExperienceWindow = () => {
         />
       )}
       
-      {/* Bubble background */}
       <div className="bubble-curve" />
     </Motion.button>
   );
 
   return (
     <div className="experience-container">
-      {/* Sidebar with bubble tabs */}
       <div className="sidebar">
         {experience.map((exp, index) => (
           <TabButton
@@ -124,7 +111,6 @@ const ExperienceWindow = () => {
         ))}
       </div>
       
-      {/* Content area */}
       <div className="content">
         <AnimatePresence mode="wait">
           <Motion.div
@@ -157,5 +143,4 @@ const ExperienceWindow = () => {
     </div>
   );
 };
-
 export default ExperienceWindow;

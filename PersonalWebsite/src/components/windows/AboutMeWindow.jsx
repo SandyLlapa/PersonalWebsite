@@ -1,11 +1,6 @@
 import React from 'react';
 
-
-
 const AboutMeWindow=()=>{
-
-
-
   return(
     <div className="profileContainer">
       <div className="Intro">
@@ -15,9 +10,6 @@ const AboutMeWindow=()=>{
           <img className="chat-bubble" src="/src/assets/Bubble.png"></img>
           <p className="bubble-text">I'm Sandy — a recent CS grad who blends creativity with code. As a first-gen student and aspiring software engineer, I love turning complex problems into simple, elegant solutions. Programming is my craft, and I'm excited to keep building and learning in the tech world.</p>
         </div>
-        
-        
-
       </div>
 
       <div className="hobbies-section">
@@ -32,9 +24,6 @@ const AboutMeWindow=()=>{
             <li>Running</li>
           </ul>
         </div>
-        
-        
-
       </div>
 
       <div className="facts-section">
@@ -42,8 +31,7 @@ const AboutMeWindow=()=>{
           <h2>Facts About Me:</h2>
           <ul>
             <li>I have 8 pet chickens</li>
-            <li>Terrified of spiders</li>
-            <li>Love stardew valley and wild rift</li>
+            <li>Love playing stardew valley and wild rift</li>
             <li>A sucker for reality tv shows</li>
             <li>Love to learn new cooking recipes</li>
             <li>Nature lover</li>
@@ -52,12 +40,10 @@ const AboutMeWindow=()=>{
           </ul>
         </div>
         <img className="facts-img" src="/src/assets/Interests.png"></img>
-        
       </div>
 
       <div className="music-section">
         <h2>What is on my playlist?</h2>
-
         <div className="albums">
           <div className="artist1">
             <a href="https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X">
@@ -77,27 +63,17 @@ const AboutMeWindow=()=>{
             </a>
             <p>Feeling Like The End</p>
           </div>
-
         </div>
-        
-        
-
       </div>
-
 
       <div className="thanks-section">
         <h2>Thank you!</h2>
         <p>Thank you so much for taking the time to explore my portfolio. I truly appreciate your interest in my work and the effort you’ve taken to learn more about my skills and experiences.
             Each project I’ve included represents a piece of my journey, and I’m grateful for the opportunity to share it with you. If you’d like to connect, discuss collaborations, or simply chat about my work, I’d love to hear from you!
             Thanks again for stopping by—it means a lot.
-
         </p>
-
       </div>
-
     </div>
   )
 }
-
-
 export default AboutMeWindow;

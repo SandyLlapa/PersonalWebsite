@@ -1,24 +1,19 @@
 
-
 html,body, #root, .container{
-  /* height:100%; */
   margin: 0px;
   padding: 0px;
 }
-
 
 .Folder{
   height:6vw;
   max-height: 110px;
   cursor:pointer;
-  
 }
 
 .folder-label{
   text-align: center;
   margin: 0px;
   font-size: 1rem;
-
 }
 
 #folderGrid{
@@ -29,16 +24,12 @@ html,body, #root, .container{
   max-width: 90vw;
   gap:20px;
   justify-self: start;
-  
-
 }
-
 
 .iconWrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .window{
@@ -52,9 +43,7 @@ html,body, #root, .container{
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   overflow: hidden;
-  padding:5px;
-  /* margin-bottom: 0px; */
-  
+  padding:5px;  
 }
 
 .windowHeader{
@@ -65,32 +54,24 @@ html,body, #root, .container{
   background-image:linear-gradient(to right,#004cff, #00d9ff ) ;
   cursor: move;
   border-radius: 10px;
-  
-
 }
 
 .windowContent {
   border-radius: 10px;
   padding: 15px;
-  height: calc(100% - 40px); /* Adjust based on header height */
+  height: calc(100% - 40px);
   overflow-y: auto;
-  /* padding-bottom: 30px; */
 }
-
 
 .close {
   background: none;
   border: none;
   cursor: pointer;
-  /* border:solid #ff7b00 2px; */
   padding:0px;
   margin-right: 1vw;
-  /* margin:0px; */
-  
 }
 
 .exit-btn{
-  /* border:solid blue 2px; */
   padding:0px;
   height:30px;
 }
@@ -108,9 +89,6 @@ html,body, #root, .container{
   justify-content: center;
   align-items: center;
   gap:15px;
-
-  
-
 }
 
 .bottom{
@@ -119,10 +97,7 @@ html,body, #root, .container{
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-
   margin-bottom: 15px;
-
-
 }
 
 .contactApps > button{
@@ -133,7 +108,6 @@ html,body, #root, .container{
   cursor:pointer;
   transition: transform 0.2s ease-in-out;
   transform-origin: bottom center;
-
 }
 
 .contactApps > button:hover{
@@ -151,7 +125,6 @@ html,body, #root, .container{
   display: inline-flex;
   justify-content: center;
 }
-
 
 .tooltip {
   position: absolute;

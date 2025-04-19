@@ -1,8 +1,6 @@
 import React from 'react';
 import '/src/styles/windows.css';
 
-
-
 const CertificationsWindow=()=>{
   const certifications = [
     {
@@ -26,7 +24,7 @@ const CertificationsWindow=()=>{
       id: 3,
       title: "Back End Development and APIs",
       date: "02/2025",
-      description: "Gained proficiency in Node.js and npm to build efficient back-end applications. Learned to develop web APIs using the Express framework, implementing RESTful routing and middleware. Additionally, worked with MongoDB and the Mongoose library to design database schemas and perform CRUD operations. Built a People Finder microservice, demonstrating th ability to create scalable back-end solutions.",
+      description: "Gained proficiency in Node.js and npm to build efficient back-end applications. Learned to develop web APIs using the Express framework, implementing RESTful routing and middleware. Additionally, worked with MongoDB and the Mongoose library to design database schemas and perform CRUD operations. Built a People Finder microservice, demonstrating the ability to create scalable back-end solutions.",
       links: "https://www.freecodecamp.org/certification/Sandy_Llapa/back-end-development-and-apis",
       image: "/src/assets/backend.webp"
     },
@@ -43,7 +41,6 @@ const CertificationsWindow=()=>{
 
   return(
     <div className="certContainer">
-
       <div className="cert-grid">
         {certifications.map(cert=>(
           <div key={cert.id} className="cert-card">
@@ -60,16 +57,9 @@ const CertificationsWindow=()=>{
               <p className="cert-description">{cert.description}</p>
             </div>
           </div>
-
         ))}
-        
       </div>
     </div>
   )
 }
-
-
-
-
-
 export default CertificationsWindow
